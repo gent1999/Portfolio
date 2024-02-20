@@ -1,0 +1,71 @@
+.navbar-fade-in {
+    animation: fadeInSlideDownAnimation ease 1s forwards;
+    opacity: 0;
+    animation-delay: 2s; 
+}
+
+.header-fade-in {
+    animation: fadeInAnimation ease 1s forwards;
+    opacity: 0;
+    animation-delay: 1.5s; 
+}
+
+.projects-fade-in {
+    animation: fadeInSlideUpAnimation ease 1s forwards;
+    opacity: 0;
+    animation-delay: 2s; 
+}
+
+.thumbnail-fade-in {
+    animation: fadeInSlideUpAnimation ease 1s forwards;
+    opacity: 0;
+    transform: translateY(20px); /* Start from a lower position */
+    animation-delay: 3s; 
+}
+
+.image-fade-in {
+    animation: fadeInThenDarkAnimation ease 1s forwards;
+    opacity: 0;
+    animation-delay: 1.5s; 
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlideUpAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from a lower position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Slide up to its original position */
+    }
+  }
+
+  @keyframes fadeInSlideDownAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Start from a higher position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Slide down to its original position */
+    }
+  }
+
+  @keyframes fadeInThenDarkAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+  
