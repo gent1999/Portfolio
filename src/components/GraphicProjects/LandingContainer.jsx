@@ -13,7 +13,7 @@ const GraphicsLanding = () => {
                         title="Photoshop"
                     />
                 </a>
-                <a href="..." className="spacing" target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
+                <a href="..." target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
                     <GraphicProjectThumbnail
                         image="/graphics_images/wolfpack/Eclipse_3.png"
                         title="Photoshop"

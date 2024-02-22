@@ -4,7 +4,7 @@ import '../styles/Thumbnail.css'
 
 const GraphicProjectThumbnail = ({ image, title }) => {
   return (
-    <div className="pictures max-w-sm rounded overflow-hidden mx-2 my-4 transition duration-300 transform hover:scale-105">
+    <div className="pictures max-w-xs rounded overflow-hidden mx-2 my-4 transition duration-300 transform hover:scale-105">
       <img className="w-full shadow-lg" src={image} alt={title} />
       <div className="px-6 py-4 relative">
         {title !== 'Photoshop' && // Render the title if it's not "Photoshop"
