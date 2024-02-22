@@ -1,10 +1,16 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import photoshopIcon from '/icons/cib-adobe-photoshop.svg';
-import '../styles/Thumbnail.css'
+import '../styles/Thumbnail.css';
 
 const GraphicProjectThumbnail = ({ image, title }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.2, // Adjust the threshold as needed
+  });
+
   return (
-    <div className="pictures max-w-xs rounded overflow-hidden mx-2 my-4 transition duration-300 transform hover:scale-105">
+    <div ref={ref} className={`pictures max-w-xs rounded overflow-hidden mx-2 my-4 transition duration-300 transform hover:scale-105 ${inView ? 'fade-in' : 'invisible'}`}>
       <img className="w-full shadow-lg" src={image} alt={title} />
       <div className="px-6 py-4 relative">
         {title !== 'Photoshop' && // Render the title if it's not "Photoshop"

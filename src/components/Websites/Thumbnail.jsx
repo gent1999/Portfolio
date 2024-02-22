@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faNode, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import postgresqlIcon from '/icons/cib-postgresql.svg';
 import threeJsIcon from '/icons/three-js-icon.svg';
+import tailwind from '/icons/tailwind-icon.svg';
 import '../styles/Thumbnail.css';
 
 const WebProjectThumbnail = ({ image, title, technologies }) => {
@@ -16,20 +17,28 @@ const WebProjectThumbnail = ({ image, title, technologies }) => {
             {technologies.includes('React') && <FontAwesomeIcon icon={faReact} className="inline-block ml-0" size="2x" />}
             {technologies.includes('Node.js') && <FontAwesomeIcon icon={faNode} className="inline-block ml-2" size="2x" />}
             {technologies.includes('Express.js') && <FontAwesomeIcon icon={faJsSquare} className="inline-block ml-2" size="2x" />}
-            {technologies.includes('PostgreSQL') && 
-              <img 
-                src={postgresqlIcon} 
-                alt="PostgreSQL" 
-                className="inline-block ml-2" 
+            {technologies.includes('PostgreSQL') &&
+              <img
+                src={postgresqlIcon}
+                alt="PostgreSQL"
+                className="inline-block ml-2"
                 style={{ position: 'relative', top: '-6px', width: '27px', filter: 'invert(1)' }} // Adjust position, size, and color
               />
             }
-            {technologies.includes('Three.js') && 
-              <img 
-                src={threeJsIcon} 
-                alt="Three.js" 
-                className="inline-block ml-2" 
+            {technologies.includes('Three.js') &&
+              <img
+                src={threeJsIcon}
+                alt="Three.js"
+                className="inline-block ml-2"
                 style={{ position: 'relative', top: '-6px', width: '27px' }} // Adjust position and size
+              />
+            }
+            {technologies.includes('Tailwind') &&
+              <img
+                src={tailwind}
+                alt="Tailwind"
+                className="inline-block ml-2"
+                style={{ position: 'relative', top: '-6px', width: '27px', filter: 'invert(1)' }} // Adjust position and size
               />
             }
           </p>

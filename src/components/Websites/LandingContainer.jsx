@@ -23,7 +23,7 @@ const WebProjectContainer = () => {
         <a href="https://www.agesrockunlimited.com/" target="_blank" rel="noopener noreferrer">
           <WebProjectThumbnail
             image="/web_images/AgesRock_Thumbnail.jpg"
-            technologies="React"
+            technologies="React, Tailwind"
           />
         </a>
       </div>
