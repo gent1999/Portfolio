@@ -2,14 +2,16 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Blob from './components/Blob/Blob';
-import Projects from './components/Projects/Container';
+import WebProjects from './components/WebProjects/WebProjectContainer';
+import GraphicsLanding from './components/GraphicProjects/GraphicsLanding';
 
 function App() {
   return (
     <div>
       <Navbar />
       <Header />
-      <Projects />
+      <WebProjects />
+      <GraphicsLanding />
       <Blob />
     </div>
   );

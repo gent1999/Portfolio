@@ -3,7 +3,7 @@ import '../transitions/FadeIn.css'
 
 const Header = () => {
     const [text, setText] = useState('');
-    const fullText = "Hi, I'm Jamal";
+    const fullText = "Hi, I'm Tamer";
 
     useEffect(() => {
         const typingInterval = setInterval(() => {
