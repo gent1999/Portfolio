@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsArrowDown } from 'react-icons/bs'; // Import the arrow icon from react-icons library
-import WebProjectThumbnail from './WebProjectThumbnail';
+import WebProjectThumbnail from './Thumbnail';
 import '../transitions/FadeIn.css';
 
 const WebProjectContainer = () => {

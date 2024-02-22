@@ -1,30 +1,28 @@
 import React from 'react';
-import GraphicProjectThumbnail from './GraphicProjectThumbnail';
+import GraphicProjectThumbnail from './Thumbnail';
+import '../styles/Thumbnail.css'
 
-const LilLeanCollection = () => {
+const GraphicsLanding = () => {
     return (
-        <div className="container mx-auto px-4 pt-10 flex flex-col items-center"> {/* Center the container */}
-            <h2 className="text-2xl mb-6 projects-fade-in flex items-center"> {/* Add flex and items-center to align the arrow and text */}
-                Lil Lean Collection
-            </h2>
+        <div className="container mx-auto px-4 pt-5 flex flex-col items-center"> {/* Center the container */}
             <div className="flex flex-col md:flex-row items-center md:items-start thumbnail-fade-in"> {/* Add md:items-start for top alignment on medium and larger screens */}
                 {/* Graphic Design Projects */}
                 <a href="..." target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
                     <GraphicProjectThumbnail
                         image="/graphics_images/lil_lean/Forever_Motion.png"
-                        title="Forever Motion"
+                        title="Photoshop"
+                    />
+                </a>
+                <a href="..." className="spacing" target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
+                    <GraphicProjectThumbnail
+                        image="/graphics_images/wolfpack/Eclipse_3.png"
+                        title="Photoshop"
                     />
                 </a>
                 <a href="..." target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
                     <GraphicProjectThumbnail
-                        image="/graphics_images/lil_lean/Slime_Business.png"
-                        title="Slime Business"
-                    />
-                </a>
-                <a href="..." target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
-                    <GraphicProjectThumbnail
-                        image="/graphics_images/lil_lean/Untouchable.png"
-                        title="Untouchable"
+                        image="/graphics_images/lil_lean/AINNOSLEEP.png"
+                        title="Photoshop"
                     />
                 </a>
             </div>
@@ -32,4 +30,4 @@ const LilLeanCollection = () => {
     )
 }
 
-export default LilLeanCollection;
+export default GraphicsLanding;

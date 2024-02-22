@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Blob from './components/Blob/Blob';
-import WebProjects from './components/WebProjects/WebProjectContainer';
-import GraphicsLanding from './components/GraphicProjects/GraphicsLanding';
+import WebProjects from './components/WebProjects/LandingContainer';
+import GraphicsLanding from './components/GraphicProjects/LandingContainer';
 
 function App() {
   return (
