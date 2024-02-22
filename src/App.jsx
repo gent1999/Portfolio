@@ -1,14 +1,15 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import LandingNavbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Blob from './components/Blob/Blob';
-import WebProjects from './components/WebProjects/LandingContainer';
-import GraphicsLanding from './components/GraphicProjects/LandingContainer';
+import WebProjects from './components/Websites/LandingContainer';
+import GraphicsLanding from './components/Graphics/LandingContainer';
+import ViewAllProjects from './components/ViewProjectsButtons/ViewProjects';
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <LandingNavbar />
       <Header />
       <WebProjects />
       <GraphicsLanding />

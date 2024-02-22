@@ -19,7 +19,7 @@ const Header = () => {
     }, [text, fullText]);
 
     return (
-        <div className="container mx-auto px-4" style={{ height: '75vh' }}>
+        <div className="container mx-auto px-0" style={{ height: '75vh' }}>
             <div className="flex flex-col justify-center items-center h-full">
                 <h1 className="text-5xl text-white font-bold mb-4">{text}</h1>
                 <h2 className="text-lg text-white header-fade-in">Fullstack Developer & Graphic Designer</h2>

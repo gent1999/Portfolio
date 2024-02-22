@@ -1,0 +1,15 @@
+/* Define a custom slow bounce animation */
+@keyframes bounce-slow {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px); /* Adjust the bounce height as needed */
+    }
+  }
+  
+  /* Apply the slow bounce animation to the element */
+  .animate-bounce-slow {
+    animation: bounce-slow 2s 7; /* Duration: 2 seconds, Iteration count: 7 */
+  }
+  

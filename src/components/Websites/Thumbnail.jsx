@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faNode, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import postgresqlIcon from '/icons/cib-postgresql.svg';
 import threeJsIcon from '/icons/three-js-icon.svg';
-import '../styles/Thumbnail.css'
+import '../styles/Thumbnail.css';
 
 const WebProjectThumbnail = ({ image, title, technologies }) => {
   return (
-    <div className="web-pictures max-w-lg rounded overflow-hidden mx-4 transition duration-300 transform hover:scale-105 relative">
+    <div className="web-pictures items-center max-w-xs lg:max-w-lg rounded overflow-hidden mx-2 transition duration-300 transform hover:scale-105 relative">
       <img className="w-full shadow-lg" src={image} alt={title} />
       <div className="py-2 relative">
         <div className="relative bg-gradient-to-r from-orange-800 to-white-400">

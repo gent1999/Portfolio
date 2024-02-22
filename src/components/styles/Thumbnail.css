@@ -14,4 +14,16 @@
   }
 
   
-  
+  /* Add this CSS to adjust the maximum width of the thumbnails for smaller screens */
+@media (max-width: 768px) {
+  .pictures {
+    width: 295px;
+    margin: auto;
+    padding-left: 0px;
+  }
+
+  .web-pictures {
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+}
