@@ -1,14 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsArrowDown } from 'react-icons/bs'; // Import the arrow icon from react-icons library
 import WebProjectThumbnail from './Thumbnail';
 import '../transitions/FadeIn.css';
 import '../transitions/Bounce.css';
+import './ScrollDown.css';
 
 const WebProjectContainer = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollBox = document.querySelector('.scrollBox');
+      const verticalText = document.querySelector('.vertical-text');
+
+      if (scrollBox) {
+        if (window.scrollY > 0) {
+          scrollBox.classList.add('fade-out');
+          verticalText.classList.add('fade-out');
+          
+        } 
+      }
+    };
+    
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="container mx-auto px-0 pt-0 flex flex-col items-center"> {/* Center the header */}
+    <div className="container mx-auto px-0 pt-0 flex flex-col items-center">
+      <div className='scroll-icon'>
+        <p className="vertical-text">scroll</p>
+        <div className="scrollBox"></div>
+      </div>
       <div className='animate-bounce-slow'>
-        <h2 className="text-xl mb-6 projects-fade-in flex items-center"> {/* Add flex and items-center to align the arrow and text */}
+        <h2 className="text-xl mb-6 projects-fade-in flex items-center">
           Featured Work
         </h2>
       </div>

@@ -1,0 +1,80 @@
+
+  
+  .scrollBox {
+    position:fixed;
+    width:4px;
+    height:120px;
+  /*   border:1px solid #FA003c; */
+    overflow:hidden;
+    bottom:200px;
+    left:50px;
+  }
+  .scrollBox:after {
+    content:"";
+    position:absolute;
+    top:-50px;
+    height:120px;
+    width:4px;
+    background: white;
+    animation:scrollDrive 2s ease infinite;
+  }
+  
+  @keyframes scrollDrive {
+    0% {
+      top:-120px;
+    }
+    50% {
+      top:120px;
+    }
+    100% {
+      top:120px;
+    }
+  }
+  
+  .vertical-text {
+    margin: 0 auto 2em;
+    width: 0;
+    word-wrap: break-word;
+    position:fixed;
+    left:50px;
+    bottom:305px;
+    font-size:9px;
+    text-transform:uppercase;    
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .scrollBox, .vertical-text {
+    opacity: 0;
+    animation: fadeIn 1s ease 5s forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .scrollBox.fade-out {
+    animation: fadeOut 1s ease forwards;
+  }
+
+  .vertical-text.fade-out {
+    animation: fadeOut 1s ease forwards;
+  }
+  
+  @media (max-width: 768px) {
+    .scrollBox, .vertical-text {
+        display: none;
+    }
+  }

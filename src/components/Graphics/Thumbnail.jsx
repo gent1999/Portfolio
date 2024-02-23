@@ -24,11 +24,11 @@ const GraphicProjectThumbnail = ({ image, title }) => {
       ref={ref}
       className={`pictures max-w-xs rounded overflow-hidden mx-2 my-4 transition duration-300 transform hover:scale-105 ${inView ? 'fade-in' : 'invisible'}`}
     >
-              {hoveredPhotoshop && (
-          <div className="message absolute fade-in bg-black text-white p-2 rounded-md text-sm bottom-11 mb-4 ml-1 opacity-100 pointer-events-auto transition-opacity duration-300 z-20">
-            {title}
-          </div>
-        )}
+      {hoveredPhotoshop && (
+        <div className="message absolute fade-in bg-black text-white p-2 rounded-md text-sm bottom-11 mb-4 ml-1 opacity-100 pointer-events-auto transition-opacity duration-300 z-20">
+          {title}
+        </div>
+      )}
       <img className="w-full shadow-lg" src={image} alt={title} />
       <div className="px-6 py-4 relative">
         {title !== 'Photoshop' && (
