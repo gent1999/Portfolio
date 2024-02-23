@@ -44,6 +44,8 @@
   opacity: 0;
 }
 
+
+
 .fade-in {
   animation: fadeIn 1s ease forwards;
 }
@@ -56,3 +58,4 @@
     opacity: 1;
   }
 }
+
