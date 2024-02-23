@@ -4,8 +4,8 @@ import '../styles/Thumbnail.css'
 
 const GraphicsLanding = () => {
     return (
-        <div className="container mx-auto px-4 pt-5 flex flex-col items-center"> {/* Center the container */}
-            <div className="flex flex-col md:flex-row items-center md:items-start thumbnail-fade-in"> {/* Add md:items-start for top alignment on medium and larger screens */}
+        <div className=" mx-auto px-4 pt-5 flex flex-col items-center"> {/* Center the container */}
+            <div className="flex flex-row items-center md:items-start thumbnail-fade-in"> {/* Add md:items-start for top alignment on medium and larger screens */}
                 {/* Graphic Design Projects */}
                 <a href="..." target="_blank" rel="noopener noreferrer"> {/* Add your graphic design project links */}
                     <GraphicProjectThumbnail
