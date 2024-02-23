@@ -16,9 +16,9 @@ const GraphicProjectThumbnail = ({ image, title }) => {
         {title !== 'Photoshop' && // Render the title if it's not "Photoshop"
           <div className="text-xl mb-0 mt-2 relative z-10">{title}</div>
         }
-        <div className="absolute top-0 left-0 mt-2 w-full h-full bg-gradient-to-r from-purple-800 to-white-400"></div>
+        <div className="absolute top-0 left-0 mt-2 w-full h-8 bg-gradient-to-r from-purple-800 to-white-400"></div>
         {title === 'Photoshop' && // Conditionally render the Photoshop icon
-          <img src={photoshopIcon} alt="Photoshop" className="inline-block" style={{ position: 'relative', top: '4px', left: '-12px', width: '27px', filter: 'invert(1)'  }} />
+          <img src={photoshopIcon} alt="Photoshop" className="inline-block" style={{ position: 'relative', top: '-7px', left: '-12px', width: '20px', filter: 'invert(1)'  }} />
         }
       </div>
     </div>
