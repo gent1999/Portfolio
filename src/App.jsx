@@ -13,6 +13,7 @@ function App() {
       <Header />
       <WebProjects />
       <GraphicsLanding />
+      <ViewAllProjects />
       <Blob />
     </div>
   );

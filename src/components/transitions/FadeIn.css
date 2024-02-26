@@ -29,6 +29,12 @@
     animation-delay: 1.5s; 
 }
 
+.buttons-fade-in {
+  animation: fadeInAnimation ease 1s forwards;
+  opacity: 0;
+  animation-delay: 2.5s; 
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -68,4 +74,3 @@
         opacity: 0.2;
     }
 }
-  

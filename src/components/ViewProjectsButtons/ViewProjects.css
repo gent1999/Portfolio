@@ -1,34 +1,15 @@
-/* Define custom gradient animation */
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  /* Define button styles */
-  .btn {
-    border: none;
-    border-radius: 0.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 0.5rem 1rem;
-  }
-  
-  /* Define gradient button styles */
-  .btn-gradient {
-    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-    color: white;
-  }
-  
-  /* Add gradient animation on hover */
-  .btn-gradient:hover {
-    animation: gradient-animation 3s ease infinite;
-  }
-  
+.btn-web,
+.btn-graphic {
+  background: linear-gradient(to right, #f6ad55, #ed8936);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.btn-web:hover,
+.btn-graphic:hover {
+  background: linear-gradient(to right, #f687b3, #ed64a6);
+}
